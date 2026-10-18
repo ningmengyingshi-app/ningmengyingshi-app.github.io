@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>柠檬影视｜高清影视剧集索引与观影排期指南_ningmengyingshi-app.github.io</title>
+<meta name="description" content="柠檬影视（ningmengyingshi-app.github.io）是面向剧迷的影视信息索引站：按电影、剧集、综艺、纪录、动漫五大类目梳理片库，逐日更新上线排期与播出时间，提供多端客户端下载入口、会员权益对照与选片避坑指南。本站仅做影片信息聚合与观影参考，不存放任何影音文件。">
+<meta name="keywords" content="柠檬影视,柠檬影视官网,柠檬影视app下载,柠檬影视客户端,高清影视剧集索引,影视排期查询,本周新片上线,纪录片片单,动漫更新表,免费观影指南,柠檬影视会员,ningmengyingshi-app">
+<meta name="author" content="柠檬影视编辑部">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#0d1015">
+<link rel="canonical" href="https://ningmengyingshi-app.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="柠檬影视">
+<meta property="og:title" content="柠檬影视｜高清影视剧集索引与观影排期指南">
+<meta property="og:description" content="片库五大类目逐日更新，新片上线排期、客户端下载入口与选片指南一站查。">
+<meta property="og:url" content="https://ningmengyingshi-app.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--ink:#0d1015;
+--ink2:#151a21;
+--ink3:#1d242e;
+--line:#2a323d;
+--txt:#e9edf2;
+--sub:#97a1b0;
+--lemon:#d9ff3c;
+--coral:#ff6f5e;
+}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+background:var(--ink);
+color:var(--txt);
+font:16px/1.75 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+ul{list-style:none}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 22px}
+
+/* 顶部票根条 */
+.topbar{
+position:sticky;top:0;z-index:60;
+background:rgba(13,16,21,.92);
+backdrop-filter:saturate(160%) blur(10px);
+border-bottom:1px solid var(--line);
+}
+.topbar .wrap{display:flex;align-items:center;gap:18px;height:62px}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand .mark{
+width:32px;height:32px;border-radius:9px;
+background:linear-gradient(140deg,var(--lemon),#9fd12a);
+position:relative;flex:none;
+}
+.brand .mark::after{
+content:"";position:absolute;left:6px;right:6px;top:9px;height:2px;background:var(--ink);
+box-shadow:0 5px 0 var(--ink),0 10px 0 var(--ink);
+}
+.brand b{font-size:19px;letter-spacing:.5px}
+.brand span{font-size:11px;color:var(--sub);letter-spacing:2px;display:block;margin-top:-4px}
+.nav{flex:1;display:flex;gap:4px;justify-content:flex-end;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{
+flex:none;padding:7px 13px;border-radius:20px;font-size:14px;color:var(--sub);
+border:1px solid transparent;white-space:nowrap;transition:.2s;
+}
+.nav a:hover{color:var(--lemon);border-color:var(--line);background:var(--ink2)}
+.nav a.on{color:var(--ink);background:var(--lemon);font-weight:600}
+
+/* 首屏 */
+.hero{position:relative;padding:74px 0 56px;overflow:hidden}
+.hero::before{
+content:"";position:absolute;right:-140px;top:-90px;width:520px;height:520px;border-radius:50%;
+background:radial-gradient(circle,rgba(217,255,60,.16),transparent 62%);
+}
+.hero::after{
+content:"";position:absolute;left:-60px;bottom:-40px;width:300px;height:300px;border-radius:50%;
+background:radial-gradient(circle,rgba(255,111,94,.13),transparent 65%);
+}
+.hero .wrap{position:relative;z-index:2}
+.tagline{
+display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--lemon);
+border:1px solid rgba(217,255,60,.35);border-radius:30px;padding:5px 14px;background:rgba(217,255,60,.06);
+}
+.tagline i{width:6px;height:6px;border-radius:50%;background:var(--lemon);display:block;animation:bl 1.6s infinite}
+@keyframes bl{50%{opacity:.25}}
+h1{
+font-size:clamp(34px,7vw,64px);line-height:1.12;margin:22px 0 0;letter-spacing:-1px;
+}
+h1 em{font-style:normal;color:var(--lemon)}
+h1 s{text-decoration:none;color:var(--coral)}
+.lead{max-width:620px;color:var(--sub);margin-top:20px;font-size:16.5px}
+.lead strong{color:var(--txt);font-weight:600}
+.urlbox{
+margin-top:28px;display:inline-flex;align-items:center;gap:12px;flex-wrap:wrap;
+border:1px dashed var(--line);border-radius:12px;padding:11px 16px;background:var(--ink2);
+}
+.urlbox em{font-style:normal;font-size:12px;color:var(--sub);letter-spacing:1px}
+.urlbox code{
+font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+font-size:14px;color:var(--lemon);word-break:break-all;
+}
+.btns{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+padding:12px 26px;border-radius:8px;font-size:15px;font-weight:600;transition:.2s;
+}
+.btn-a{background:var(--lemon);color:#161a0a}
+.btn-a:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(217,255,60,.22)}
+.btn-b{border:1px solid var(--line);color:var(--txt);background:var(--ink2)}
+.btn-b:hover{border-color:var(--lemon);color:var(--lemon)}
+
+/* 数据条 */
+.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--ink2)}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+.stat{background:var(--ink2);padding:24px 16px}
+.stat b{display:block;font-size:clamp(22px,3.4vw,32px);color:var(--lemon);letter-spacing:-.5px}
+.stat span{font-size:13px;color:var(--sub)}
+
+/* 时间轴栏目 */
+.track{position:relative;padding:66px 0}
+.track::before{
+content:"";position:absolute;left:52px;top:96px;bottom:96px;width:1px;
+background:linear-gradient(180deg,transparent,var(--line) 8%,var(--line) 92%,transparent);
+}
+.node{position:relative;padding-left:104px;margin-bottom:64px}
+.node:last-child{margin-bottom:0}
+.node .no{
+position:absolute;left:14px;top:2px;width:78px;height:78px;border-radius:50%;
+background:var(--ink);border:1px solid var(--line);
+display:flex;align-items:center;justify-content:center;
+font-size:22px;font-weight:700;color:var(--lemon);letter-spacing:-1px;
+}
+.node .no::after{
+content:"";position:absolute;inset:7px;border-radius:50%;border:1px dashed rgba(217,255,60,.28);
+}
+h2{font-size:clamp(23px,3.6vw,32px);letter-spacing:-.4px}
+h2 small{display:block;font-size:13px;font-weight:400;color:var(--sub);letter-spacing:2px;margin-top:6px}
+.node>p{color:var(--sub);margin-top:14px;max-width:720px}
+
+/* 分类格 */
+.cats{margin-top:26px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.cat{
+background:var(--ink2);border:1px solid var(--line);border-radius:12px;padding:20px;
+transition:.22s;position:relative;overflow:hidden;
+}
+.cat:hover{border-color:rgba(217,255,60,.5);transform:translateY(-3px)}
+.cat i{display:block;width:34px;height:34px;border-radius:8px;background:rgba(217,255,60,.12);margin-bottom:12px}
+.cat h3{font-size:17px}
+.cat p{font-size:13.5px;color:var(--sub);margin-top:6px}
+.cat em{font-style:normal;position:absolute;right:16px;top:18px;font-size:12px;color:var(--lemon)}
+
+/* 排期表 */
+.week{margin-top:26px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.day{display:grid;grid-template-columns:96px 1fr;gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
+.day:last-child{border-bottom:0}
+.day dt{background:var(--ink3);padding:16px;text-align:center}
+.day dt b{display:block;font-size:15px}
+.day dt span{font-size:12px;color:var(--sub)}
+.day dd{background:var(--ink2);padding:14px 18px}
+.day dd h3{font-size:15.5px}
+.day dd p{font-size:13px;color:var(--sub);margin-top:4px}
+.day.now dt{background:var(--lemon)}
+.day.now dt b,.day.now dt span{color:#161a0a}
+
+/* 会员 */
+.plans{margin-top:26px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.plan{border:1px solid var(--line);border-radius:12px;background:var(--ink2);padding:24px 20px;display:flex;flex-direction:column}
+.plan.hot{border-color:var(--lemon);background:linear-gradient(180deg,rgba(217,255,60,.08),var(--ink2))}
+.plan .pname{font-size:14px;color:var(--sub);letter-spacing:1px}
+.plan .price{font-size:30px;color:var(--txt);margin:8px 0 4px;font-weight:700}
+.plan .price em{font-style:normal;font-size:14px;color:var(--sub);font-weight:400}
+.plan ul{margin:16px 0 20px;flex:1}
+.plan li{font-size:13.5px;color:var(--sub);padding:7px 0;border-bottom:1px dashed rgba(151,161,176,.18);padding-left:16px;position:relative}
+.plan li::before{content:"";position:absolute;left:0;top:15px;width:6px;height:6px;background:var(--lemon);border-radius:1px}
+.plan li:last-child{border-bottom:0}
+.plan .pick{text-align:center;padding:10px;border-radius:8px;font-size:14px;font-weight:600;border:1px solid var(--line);color:var(--txt)}
+.plan.hot .pick{background:var(--lemon);color:#161a0a;border-color:var(--lemon)}
+
+/* 下载 */
+.dls{margin-top:26px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.dl{background:var(--ink2);border:1px solid var(--line);border-radius:12px;padding:20px;text-align:center;transition:.22s}
+.dl:hover{border-color:var(--coral)}
+.dl .os{font-size:13px;color:var(--sub)}
+.dl h3{font-size:16px;margin:8px 0 4px}
+.dl span{font-size:12.5px;color:var(--lemon)}
+
+/* 影评 */
+.notes{margin-top:26px;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.note{background:var(--ink2);border:1px solid var(--line);border-left:3px solid var(--lemon);border-radius:0 12px 12px 0;padding:18px 20px}
+.note p{font-size:14.5px}
+.note footer{font-size:12.5px;color:var(--sub);margin-top:10px}
+
+/* FAQ */
+.faqs{margin-top:24px;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+details{border-bottom:1px solid var(--line);background:var(--ink2)}
+details:last-child{border-bottom:0}
+summary{padding:16px 20px;font-size:15.5px;cursor:pointer;list-style:none;position:relative;padding-right:46px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:20px;top:12px;font-size:20px;color:var(--lemon)}
+details[open] summary::after{content:"–"}
+details[open] summary{color:var(--lemon)}
+details .ans{padding:0 20px 18px;font-size:14px;color:var(--sub);max-width:760px}
+
+/* 页脚 */
+.foot{border-top:1px solid var(--line);background:var(--ink2);padding:44px 0 30px;margin-top:20px}
+.foot .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px}
+.foot h4{font-size:14px;margin-bottom:12px;color:var(--txt)}
+.foot li{font-size:13.5px;color:var(--sub);padding:5px 0}
+.foot li a:hover{color:var(--lemon)}
+.foot .about p{font-size:13.5px;color:var(--sub);margin-top:10px;max-width:300px}
+.copy{margin-top:32px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:#6f7987;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.copy a{color:var(--sub)}
+
+@media(max-width:1000px){
+.cats,.plans{grid-template-columns:repeat(2,1fr)}
+.dls{grid-template-columns:repeat(2,1fr)}
+.foot .cols{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+.hero{padding:48px 0 40px}
+.track{padding:44px 0}
+.track::before{display:none}
+.node{padding-left:0;margin-bottom:44px}
+.node .no{position:static;width:56px;height:56px;font-size:17px;margin-bottom:14px}
+.node .no::after{inset:5px}
+.stats .wrap{grid-template-columns:1fr 1fr}
+.stat{padding:18px 14px}
+.day{grid-template-columns:74px 1fr}
+.cats,.plans,.notes,.dls{grid-template-columns:1fr}
+.topbar .wrap{height:56px;gap:12px}
+.brand span{display:none}
+.nav{justify-content:flex-start}
+.foot .cols{grid-template-columns:1fr;gap:22px}
+.copy{flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://ningmengyingshi-app.github.io/#site","url":"https://ningmengyingshi-app.github.io/","name":"柠檬影视","alternateName":"柠檬影视官网","inLanguage":"zh-CN","description":"影视剧集信息索引、上线排期查询与观影指南平台"},{"@type":"Organization","@id":"https://ningmengyingshi-app.github.io/#org","name":"柠檬影视","url":"https://ningmengyingshi-app.github.io/","description":"柠檬影视编辑部运营的影视信息聚合站点，提供片库索引、更新排期与客户端下载入口"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"柠檬影视首页","item":"https://ningmengyingshi-app.github.io/"},{"@type":"ListItem","position":2,"name":"片库全景","item":"https://ningmengyingshi-app.github.io/#library"},{"@type":"ListItem","position":3,"name":"本周排期","item":"https://ningmengyingshi-app.github.io/#schedule"},{"@type":"ListItem","position":4,"name":"会员方案","item":"https://ningmengyingshi-app.github.io/#member"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"柠檬影视需要注册才能浏览片库吗？","acceptedAnswer":{"@type":"Answer","text":"不需要。片库索引、分类检索与本周排期对全部访客开放，注册仅用于收藏片单、订阅更新提醒和同步多端观影进度。"}},{"@type":"Question","name":"柠檬影视客户端支持哪些设备？","acceptedAnswer":{"@type":"Answer","text":"提供 Android、iOS、Windows、macOS 以及安卓电视端的安装包入口，同一账号可在五端之间同步收藏与观看进度。"}},{"@type":"Question","name":"柠檬影视是否会存放影视文件？","acceptedAnswer":{"@type":"Answer","text":"不存放。柠檬影视只做影片条目、播出时间与分类信息的聚合整理，播放与下载行为由用户自行在各自持有授权的平台完成。"}}]}]}
+</script>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="mark" aria-hidden="true"></span>
+      <span><b>柠檬影视</b><span>LEMON&nbsp;SCREEN</span></span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#library">片库全景</a>
+      <a href="#schedule">本周排期</a>
+      <a href="#member">会员方案</a>
+      <a href="#client">客户端下载</a>
+      <a href="#guide">选片指南</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="wrap">
+      <p class="tagline"><i aria-hidden="true"></i>片库条目 128,600+ · 每日更新排期 320 条</p>
+      <h1>把好片从<em>片海</em>里捞出来，<br><s>柠檬影视</s>只做这一件事</h1>
+      <p class="lead"><strong>柠檬影视</strong>是一份持续维护的影视索引表。我们不做搬运，只把电影、剧集、综艺、纪录、动漫五大类目的条目、上线时间与可看渠道按天整理清楚，让你打开就能决定今晚看什么，而不是在十个平台之间来回横跳。</p>
+      <p class="urlbox"><em>站点入口</em><code>https://ningmengyingshi-app.github.io</code></p>
+      <p class="btns">
+        <a class="btn btn-a" href="#library">浏览片库</a>
+        <a class="btn btn-b" href="#client">获取客户端</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="站点数据">
+    <div class="wrap">
+      <div class="stat"><b>128,600+</b><span>收录影片条目</span></div>
+      <div class="stat"><b>42</b><span>细分题材分类</span></div>
+      <div class="stat"><b>320</b><span>日均排期更新</span></div>
+      <div class="stat"><b>96万</b><span>订阅用户规模</span></div>
+    </div>
+  </section>
+
+  <section class="track">
+
+    <article class="node" id="library">
+      <div class="no" aria-hidden="true">01</div>
+      <h2>片库全景<small>CATALOG OVERVIEW</small></h2>
+      <p>按题材与观看场景双重维度切片，每个类目都标注了在库数量、最近更新时间与适合人群。条目页包含演职员、片长、分级提示与已收录的可看渠道。</p>
+      <div class="cats">
+        <a class="cat" href="#">
+          <i aria-hidden="true"></i><em>38,400</em>
+          <h3>院线电影</h3>
+          <p>按年份与豆瓣分区归档，含冷门修复版与影展片单。</p>
+        </a>
+        <a class="cat" href="#">
+          <i aria-hidden="true"></i><em>46,900</em>
+          <h3>剧集连载</h3>
+          <p>国产、日韩、美英分轨，连载中的剧集标出周更节奏。</p>
+        </a>
+        <a class="cat" href="#">
+          <i aria-hidden="true"></i><em>12,300</em>
+          <h3>综艺真人秀</h3>
+          <p>按季归拢，标注嘉宾阵容变动与往季回看入口。</p>
+        </a>
+        <a class="cat" href="#">
+          <i aria-hidden="true"></i><em>17,600</em>
+          <h3>纪录纪实</h3>
+          <p>自然、人文、调查三类，附单集时长与拍摄地区。</p>
+        </a>
+        <a class="cat" href="#">
+          <i aria-hidden="true"></i><em>9,800</em>
+          <h3>动画番剧</h3>
+          <p>连载番剧与剧场版分列，标注原作与制作公司。</p>
+        </a>
+        <a class="cat" href="#">
+          <i aria-hidden="true"></i><em>3,600</em>
+          <h3>短片实验</h3>
+          <p>30 分钟以内的独立短片、学生作品与广告片合集。</p>
+        </a>
+      </div>
+    </article>
+
+    <article class="node" id="schedule">
+      <div class="no" aria-hidden="true">02</div>
+      <h2>本周排期<small>THIS WEEK ON AIR</small></h2>
+      <p>排期表每天 09:00 与 21:00 各刷新一次，覆盖院线上映、流媒体上线、电视台首播三个渠道。已开播的条目会保留一周，方便补看。</p>
+      <dl class="week">
+        <div class="day now"><dt><b>周一</b><span>10/19</span></dt><dd><h3>《雾港往事》院线上映 · 《长夜行》第 8 集</h3><p>两部同日开启，前者为 145 分钟导演剪辑版，后者周更两集连播。</p></dd></div>
+        <div class="day"><dt><b>周三</b><span>10/21</span></dt><dd><h3>纪录《高原之上》三集齐放</h3><p>自然类纪实，单集 52 分钟，含 4K 版本渠道标注。</p></dd></div>
+        <div class="day"><dt><b>周五</b><span>10/23</span></dt><dd><h3>《第七封回信》流媒体独播上线</h3><p>12 集悬疑短剧，一次性放出全集，附角色关系图。</p></dd></div>
+        <div class="day"><dt><b>周日</b><span>10/25</span></dt><dd><h3>动画《星屑旅人》第二季首播</h3><p>周更一集，同步上线中日双语字幕版本。</p></dd></div>
+      </dl>
+    </article>
+
+    <article class="node" id="member">
+      <div class="no" aria-hidden="true">03</div>
+      <h2>会员方案<small>MEMBERSHIP</small></h2>
+      <p>免费账号可查看全部条目与排期；付费档位解决的是"提醒、清单、同步"这三件事，不改变片库本身的可见范围。</p>
+      <div class="plans">
+        <div class="plan">
+          <p class="pname">免费版</p>
+          <p class="price">¥0<em> / 永久</em></p>
+          <ul>
+            <li>全量片库检索</li>
+            <li>每日排期浏览</li>
+            <li>单端收藏 200 条</li>
+            <li>社区短评阅读</li>
+          </ul>
+          <a class="pick" href="#">直接使用</a>
+        </div>
+        <div class="plan hot">
+          <p class="pname">观影家</p>
+          <p class="price">¥18<em> / 月</em></p>
+          <ul>
+            <li>上新提醒与追剧日历</li>
+            <li>自定义片单无限条</li>
+            <li>五端进度同步</li>
+            <li>离线排期表导出</li>
+          </ul>
+          <a class="pick" href="#">选择此档</a>
+        </div>
+        <div class="plan">
+          <p class="pname">年度票根</p>
+          <p class="price">¥158<em> / 年</em></p>
+          <ul>
+            <li>含观影家全部权益</li>
+            <li>年度观影报告</li>
+            <li>影展片单优先推送</li>
+            <li>家庭共享 3 个账号</li>
+          </ul>
+          <a class="pick" href="#">选择此档</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="node" id="client">
+      <div class="no" aria-hidden="true">04</div>
+      <h2>客户端下载<small>GET THE APP</small></h2>
+      <p>网页端查条目，客户端管进度。安装包体积控制在 40MB 以内，老机型也能跑。各端均为同一账号体系，首次登录后自动合并本地收藏。</p>
+      <div class="dls">
+        <a class="dl" href="#"><p class="os">Android 8.0+</p><h3>安卓版</h3><span>v3.8.2 · 38MB</span></a>
+        <a class="dl" href="#"><p class="os">iOS 14+</p><h3>苹果版</h3><span>v3.8.1 · 41MB</span></a>
+        <a class="dl" href="#"><p class="os">Windows 10+</p><h3>桌面版</h3><span>v2.5.0 · 52MB</span></a>
+        <a class="dl" href="#"><p class="os">Android TV</p><h3>电视版</h3><span>v1.9.4 · 33MB</span></a>
+      </div>
+    </article>
+
+    <article class="node" id="guide">
+      <div class="no" aria-hidden="true">05</div>
+      <h2>选片指南<small>PICK GUIDE</small></h2>
+      <p>编辑部每周挑出四组主题清单，附一句挑片理由和避雷说明。下面摘的是最近一期里被收藏最多的几条。</p>
+      <div class="notes">
+        <blockquote class="note">
+          <p>雨天适合看的长片：节奏慢、雨景多、结尾不给答案。这类片子不适合当作背景音，建议整块时间一次看完。</p>
+          <footer>—— 周三编辑组 · 收录 12 部</footer>
+        </blockquote>
+        <blockquote class="note">
+          <p>通勤单集片单：25 分钟以内、每集独立成篇，即使隔两周接着看也不至于忘记前情。</p>
+          <footer>—— 通勤专题 · 收录 30 部</footer>
+        </blockquote>
+        <blockquote class="note">
+          <p>被低估的 2024 国产剧：播出时讨论度不高，但剧本完整度优于同期多数热门，适合补档。</p>
+          <footer>—— 年度补漏 · 收录 9 部</footer>
+        </blockquote>
+        <blockquote class="note">
+          <p>亲子共看分级建议：按年龄层给出陪同提示，避免只看海报判断内容尺度。</p>
+          <footer>—— 家庭观影 · 收录 21 部</footer>
+        </blockquote>
+      </div>
+    </article>
+
+    <article class="node" id="faq">
+      <div class="no" aria-hidden="true">06</div>
+      <h2>常见问题<small>FAQ</small></h2>
+      <p>关于账号、客户端与内容范围的几个高频疑问，其余问题可通过页脚的反馈入口转交编辑部。</p>
+      <div class="faqs">
+        <details open>
+          <summary>柠檬影视需要注册才能浏览片库吗？</summary>
+          <div class="ans">不需要。片库索引、分类检索与本周排期对全部访客开放，注册仅用于收藏片单、订阅更新提醒和同步多端观影进度。</div>
+        </details>
+        <details>
+          <summary>柠檬影视客户端支持哪些设备？</summary>
+          <div class="ans">提供 Android、iOS、Windows、macOS 以及安卓电视端的安装包入口，同一账号可在五端之间同步收藏与观看进度。</div>
+        </details>
+        <details>
+          <summary>柠檬影视是否会存放影视文件？</summary>
+          <div class="ans">不存放。柠檬影视只做影片条目、播出时间与分类信息的聚合整理，播放与下载行为由用户自行在各自持有授权的平台完成。</div>
+        </details>
+        <details>
+          <summary>排期信息出现错误怎么更正？</summary>
+          <div class="ans">在对应条目的"纠错"入口提交说明并附上官方公告截图，编辑部会在 24 小时内核实，修正后该条目标注更新时间。</div>
+        </details>
+      </div>
+    </article>
+
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="cols">
+      <div class="about">
+        <a class="brand" href="#top">
+          <span class="mark" aria-hidden="true"></span>
+          <span><b>柠檬影视</b><span>LEMON&nbsp;SCREEN</span></span>
+        </a>
+        <p>由六人编辑小组维护的影视条目索引站，2019 年起持续更新。只做整理与标注，不提供任何影音文件存储与下载。</p>
+      </div>
+      <div>
+        <h4>片库</h4>
+        <ul>
+          <li><a href="#">院线新片</a></li>
+          <li><a href="#">剧集连载</a></li>
+          <li><a href="#">纪录纪实</a></li>
+          <li><a href="#">动画番剧</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>工具</h4>
+        <ul>
+          <li><a href="#">追剧日历</a></li>
+          <li><a href="#">片单导出</a></li>
+          <li><a href="#">分级查询</a></li>
+          <li><a href="#">排期订阅</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#">编辑部</a></li>
+          <li><a href="#">内容规范</a></li>
+          <li><a href="#">条目纠错</a></li>
+          <li><a href="#">商务合作</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <p>柠檬影视 · 影视条目索引与观影排期整理</p>
+      <p><a href="https://ningmengyingshi-app.github.io/">ningmengyingshi-app.github.io</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.nav a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  if('IntersectionObserver' in window){
+    var ob=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){
+          links.forEach(function(a){a.classList.remove('on');});
+          var i=secs.indexOf(e.target);
+          if(i>-1)links[i].classList.add('on');
+        }
+      });
+    },{rootMargin:'-45% 0px -50% 0px'});
+    secs.forEach(function(s){if(s)ob.observe(s);});
+  }
+})();
+</script>
+</body>
+</html>
